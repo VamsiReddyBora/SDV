@@ -18,6 +18,6 @@ if [ -f "$PID_FILE" ]; then
 fi
 
 # Fallback: kill any remaining node instances by binary name
-killall -q central_compute pcm_node bms_node bcm_node hmi_node || true
+killall -q central_compute pcm_node bms_node bcm_node hmi_node adas_node brake_node eps_node hvac_node telematics_node || true
 
 echo "All simulation nodes stopped."

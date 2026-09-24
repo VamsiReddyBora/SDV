@@ -6,7 +6,7 @@ BIN_DIR = bin
 COMMON_SRC = common/can_common.c
 COMMON_OBJ = $(COMMON_SRC:.c=.o)
 
-NODES = central_compute pcm_node bms_node bcm_node hmi_node
+NODES = central_compute pcm_node bms_node bcm_node hmi_node adas_node brake_node eps_node hvac_node telematics_node
 BINARIES = $(addprefix $(BIN_DIR)/, $(NODES))
 
 .PHONY: all clean run
