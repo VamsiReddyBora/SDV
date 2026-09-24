@@ -1,0 +1,9 @@
+# Build binaries and object files
+bin/
+*.o
+common/*.o
+
+# Logs and runtime artifacts
+logs/
+*.log
+.sim_pids
